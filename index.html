@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Science at Digital Speed</title>
+    <style>
+      /* BRAND GUIDELINES
+         Primary Color: #3a366b
+         Secondary Color: #f5f5f7
+         Accent Color: #6d6a9c
+         Font: 'Inter', Arial, sans-serif
+       */
+
+      /* RESET */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f5f7 0%, #e0e0e3 100%);
+        color: #333;
+      }
+
+      /* HEADER & NAV */
+      header {
+        background: #3a366b;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .logo {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.3s ease;
+      }
+      nav a:hover {
+        opacity: 0.8;
+      }
+
+      /* HERO SECTION */
+      .hero {
+        /* Slight gradient from primary to accent to create visual interest */
+        background: linear-gradient(135deg, #3a366b 0%, #6d6a9c 100%);
+        color: #fff;
+        padding: 4rem 1rem;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto 2rem auto;
+        line-height: 1.6;
+        opacity: 0.9;
+      }
+      .hero .cta-button {
+        background: #fff; /* Contrast to new gradient background */
+        color: #3a366b;
+        padding: 0.75rem 1.5rem;
+        border-radius: 24px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+      .hero .cta-button:hover {
+        background: #f0f0f0;
+        color: #3a366b;
+      }
+
+      /* MAIN CONTENT */
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      section h2 {
+        color: #3a366b;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
+      section p {
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+
+      /* CARD STYLES */
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+        padding: 2rem;
+      }
+      .card h3 {
+        margin-bottom: 0.75rem;
+        font-size: 1.2rem;
+        color: #3a366b;
+      }
+
+      /* GRID FOR EXAMPLES */
+      .examples {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      .example {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+      }
+      .example h4 {
+        color: #3a366b;
+        margin-bottom: 0.5rem;
+      }
+
+      /* FOOTER */
+      footer {
+        text-align: center;
+        padding: 1rem;
+        color: #666;
+        background: #fff;
+        box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+      }
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      /* MEDIA QUERIES */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .hero {
+          padding: 3rem 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <header>
+      <div class="nav-container">
+        <div class="logo">Science@DigitalSpeed</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#future">Future</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+      <h1>Science at Digital Speed</h1>
+      <p>
+        Accelerating scientific discovery through AI and computational
+        breakthroughs to transform the future of research.
+      </p>
+      <a class="cta-button" href="#about">Learn More</a>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <div class="card">
+          <h2>About Science at Digital Speed</h2>
+          <p>
+            "Science at digital speed" is a concept championed by Demis Hassibis,
+            co-founder of DeepMind. This approach emphasizes advanced
+            computational tools and machine learning methods to accelerate
+            scientific discovery.
+          </p>
+          <p>
+            Our mission at Science@DigitalSpeed is to gather thought leaders,
+            industry experts, and enthusiasts to explore how digital
+            technologies push the boundaries of what's possible in science,
+            unlocking breakthroughs across fields like healthcare, climate,
+            materials, and more.
+          </p>
+        </div>
+      </section>
+
+      <!-- FUTURE SECTION -->
+      <section id="future">
+        <div class="card">
+          <h2>The Future of Rapid Discovery</h2>
+          <p>
+            As machine learning algorithms grow more sophisticated and
+            computing power surges, the potential for accelerated breakthroughs
+            expands. Below are domains already experiencing significant gains:
+          </p>
+          <div class="examples">
+            <div class="example">
+              <h4>Protein Folding</h4>
+              <p>
+                DeepMind's AlphaFold revolutionized protein structure
+                prediction, offering unprecedented speed and accuracy that
+                benefits research in biology, medicine, and beyond.
+              </p>
+            </div>
+            <div class="example">
+              <h4>Climate Modeling</h4>
+              <p>
+                High-performance computing enables detailed simulations of
+                global weather patterns, improving climate change projections
+                and disaster preparedness.
+              </p>
+            </div>
+            <div class="example">
+              <h4>Drug Discovery</h4>
+              <p>
+                AI can sift through vast chemical libraries rapidly, reducing
+                drug discovery timelines from years to mere weeks.
+              </p>
+            </div>
+            <div class="example">
+              <h4>Materials Science</h4>
+              <p>
+                Computational methods identify new materials for semiconductors,
+                batteries, and more—accelerating R&D cycles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESOURCES SECTION -->
+      <section id="resources">
+        <div class="card">
+          <h2>Resources &amp; Articles</h2>
+          <p>
+            Dive deeper into digital-speed science through curated readings,
+            tutorials, and scholarly articles:
+          </p>
+          <ul>
+            <li><strong>Nature</strong> Special Issue on AI in Science</li>
+            <li><strong>MIT Technology Review</strong> on ML breakthroughs</li>
+            <li><strong>DeepMind Blog</strong> for insights and latest research</li>
+            <li><strong>ArXiv</strong> for open-access scientific papers</li>
+            <li><strong>OpenAI</strong> research repository</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <div class="card">
+          <h2>Contact Us</h2>
+          <p>
+            Interested in collaborating, sharing insights, or contributing
+            content? We would love to hear from you. Feel free to reach out:
+          </p>
+          <p>
+            Email: <a href="mailto:info@scienceatdigitalspeed.com">info@scienceatdigitalspeed.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Science@DigitalSpeed. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
